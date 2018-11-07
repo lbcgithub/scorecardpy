@@ -30,7 +30,7 @@ def eva_dfkslift(df, groupnum=None):
     df_kslift=pd.concat([
       pd.DataFrame({'group':0, 'good':0, 'bad':0, 'good_distri':0, 'bad_distri':0, 'badrate':0, 'cumbadrate':np.nan, 'cumgood':0, 'cumbad':0, 'ks':0, 'lift':np.nan}, index=np.arange(1)),
       df_kslift
-    ], ignore_index=True, sort=False)
+    ], ignore_index=True)
     # return
     return df_kslift
 # plot ks    
